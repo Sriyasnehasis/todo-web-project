@@ -1,0 +1,26 @@
+meta {
+  name: Add Todo
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:5000/api/todos
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODZhYWY0OGRhYjE2YTI1OWQzMzE5ZmIiLCJpYXQiOjE3NTE5ODk4NzQsImV4cCI6MTc1MTk5MzQ3NH0.DQbwt4Bn5LQSgq7t7wk3Ju5aTcG4q3CbaHtyLpzE31s
+}
+
+body:json {
+  {
+    "title": "Workout",
+    "description": "Leg day at the gym",
+    "completed": false,
+    "priority": "medium",
+    "tags": ["health"]
+  }
+  
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Filter by priority:
+  type: http
+  seq: 7
+}
+
+get {
+  url: http://localhost:5000/api/todos?priority=medium
+  body: none
+  auth: inherit
+}
+
+params:query {
+  priority: medium
+}

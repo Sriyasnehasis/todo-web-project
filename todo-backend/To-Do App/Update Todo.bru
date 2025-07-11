@@ -1,0 +1,22 @@
+meta {
+  name: Update Todo
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:5000/api/todos/686a8c5fe0750ca411fc91b8
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "Updated Project Task",
+    "description": "Backend update completed",
+    "priority": "medium",
+    "tags": ["backend", "urgent"],
+    "completed": true
+  }
+  
+}
